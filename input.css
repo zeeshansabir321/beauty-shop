@@ -2,3 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .btn{
+        @apply bg-slate-300 px-5 py-1 text-gray-700 inline-block rounded-3xl transition-all cursor-pointer hover:scale-105 hover:shadow-lg;
+    }
+    .btn--primary{
+        @apply bg-green text-white  hover:bg-complementary hover:text-slate-800
+    }
+    .btn--secondary{
+        @apply hover:bg-green hover:text-white bg-complementary
+    }
+    .main-header{
+        @apply bg-primary;
+    }
+    .menu-list{
+        @apply w-80 rounded-lg bg-body list-none overflow-hidden;
+    }
+    .menu-list li a{
+        @apply flex gap-2 py-3 px-5 hover:bg-complementary hover:text-white transition-colors
+    }
+
+}
